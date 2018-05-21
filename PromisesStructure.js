@@ -1,0 +1,17 @@
+// example of a promise
+
+var promise = new Promise(function(resolve, reject) {
+    // do smth
+    if (true) {
+        resolve('It worked');
+    }  else {
+        reject('It failed');
+    }
+});
+
+promise.then(function(resolve) {
+    console.log(resolve);
+}, function(reject) {
+    console.log(reject);
+});
+
